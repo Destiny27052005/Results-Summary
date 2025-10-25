@@ -184,6 +184,7 @@ button {
     height: 40px;
     color: var(--White);
     background-color: var(--Dark-gray-blue);
+    cursor:pointer;
     border: none;
     outline: none;
     transition: all 0.5s;
@@ -225,4 +226,5 @@ button:hover {
     .result {
         border-radius: 18px;
     }
+
 }
