@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Primary */
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+}
+
+/* Gradient */
+:root {
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+/* Neutral */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: var(--Pale-blue);
+}
+
+.result {
+    text-align: center;
+    background: linear-gradient(var(--Light-slate-blue) 30%, var(--Light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+h3 {
+    color: var(--White);
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.result p {
+    font-size: 18px;
+    font-size: 500;
+    margin-top: 1rem;
+    color: var(--Pale-blue);
+}
+
+h1 {
+    color: var(--Light-lavender);
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.circle p {
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(var(--Violet-blue) 40%, var(--Persian-blue));
+}
+
+.circle h2 {
+    color: var(--White);
+}
+
+.circle p {
+    columns: rgba(173, 173, 173, 0.271);
+}
+
+/*summary*/
+
+.summary {
+    padding: 1rem;
+}
+
+.summary p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.wrap {
+    display: flex;
+}
+
+.reaction {
+    width: 100%;
+    background-color: hsla(0, 100%, 67%, 0.071);
+    ;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+span {
+    color: var(--Dark-gray-blue);
+}
+
+h5 {
+    color: rgba(128, 128, 128, 0.503);
+}
+
+.reaction h4 {
+    color: var(--Light-red);
+    margin-left: 5px;
+}
+
+.memory {
+    width: 100%;
+    background-color: hsla(39, 100%, 56%, 0.088);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.memory h4 {
+    color: var(--Orangey-yellow);
+    margin-left: 5px;
+}
+
+.verbal {
+    width: 100%;
+    background-color: hsla(166, 100%, 37%, 0.116);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.verbal h4 {
+    color: var(--Green-teal);
+    margin-left: 5px;
+}
+
+.visual {
+    width: 100%;
+    background-color: hsla(234, 85%, 45%, 0.066);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.visual h4 {
+    color: var(--Cobalt-blue);
+    margin-left: 5px;
+}
+
+
+button {
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    color: var(--White);
+    background-color: var(--Dark-gray-blue);
+    border: none;
+    outline: none;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: var(--Light-royal-blue);
+}
+
+@media (min-width: 1200px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .container {
+        width: 35%;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        background-color: var(--White);
+        border-radius: 18px;
+        box-shadow: 15px 15px 10px hsla(241, 83%, 67%, 0.107);
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .result {
+        border-radius: 18px;
+    }
+}
